@@ -22,10 +22,10 @@
 
     <!-- Run BEFORE page is finished loading (before window.onload - don't add the `defer` attribute): -->
     <script src="scripts/auth.js"></script>
-    <script>
+    <!-- <script>
         // If the user IS logged in, redirect to posts.html
         if (isLoggedIn() === true) window.location.replace("posts.html");
-    </script>
+    </script> -->
 </head>
 <body>
 
@@ -42,7 +42,12 @@
                 <label for="username">Username</label>
                 <input type="text" id="username" minlength="3">
             </div>
-
+            
+            <div>
+                <label for="fullName">Full name</label>
+                <input type="text" id="fullName" minlength="3">
+            </div>
+            
             <div>
                 <label for="password">Password</label>
                 <input type="password" id="password" minlength="6">
@@ -56,6 +61,6 @@
     <footer></footer>
 
     <!-- Page-specific code -->
-    <script src="scripts/landing.js"></script>
+    <script src="scripts/signup.js"></script>
 </body>
 </html>
