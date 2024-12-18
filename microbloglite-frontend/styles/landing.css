@@ -1,1 +1,50 @@
 /* Landing Page CSS */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-container {
+  flex: 1 0 auto;
+}
+
+.logo-section {
+  min-height: 50vh;
+}
+.logo-section svg {
+  width: 60%;
+  color: white;
+}
+
+hr {
+  border-top: 1px solid #ccc;
+}
+
+.media {
+  background-color: white;
+  border: 1px solid #ddd;
+}
+.media img {
+  height: 20px;
+  margin-right: 10px;
+}
+.modal-backdrop {
+  background-color: rgba(91, 112, 131, 0.813);
+}
+
+#signIn {
+  border: 1px rgb(83, 100, 113) solid;
+}
+
+#signIn:hover {
+  background-color: rgba(73, 159, 225, 0.16);
+}
+
+.xblue ,#signIn {
+  color: rgb(29, 155, 240);
+}
+
+.bg-xblue , #createAcc {
+    background-color: rgb(29, 155, 240) ;
+}
