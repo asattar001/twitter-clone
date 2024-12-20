@@ -34,7 +34,7 @@
       if (isLoggedIn() === false) window.location.replace("index.html");
     </script>
   </head>
-  <body>
+  <body class="container-fluid">
     <main class="row">
       <!-- Left Side Bar -->
       <div class="col-2 sidebar justify-content-between">
@@ -312,7 +312,7 @@
           </button>
         </div>
 
-        <!-- Create Post Section -->
+        <!-- Main Create Post Section -->
         <div class="d-flex p-3 border-bottom">
           <div class="avatar currentUserAvatar">X</div>
           <div class="flex-grow-1">
@@ -322,6 +322,7 @@
               id="mainPost"
             ></textarea>
             <hr class="mt-2" />
+            <!-- Icons and Post Button -->
             <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex gap-1">
                 <div>
@@ -391,7 +392,7 @@
                   </a>
                 </div>
               </div>
-              <button class="btn btn-primary rounded-pill px-5 text-center bg-xblue" id="postBtn">Post</button>
+              <button class="btn btn-primary rounded-pill px-5 text-center bg-xblue border-0" id="postBtn">Post</button>
             </div>
           </div>
         </div>
@@ -423,6 +424,7 @@
                       alt="Description"
                     />
                   </div>
+                  <!-- Icons -->
                   <div class="d-flex justify-content-between mt-1">
                     <div>
                       <!-- Post -->
@@ -537,6 +539,7 @@
           <input type="text" class="form-control border-start-0" placeholder="Search X" />
         </div>
 
+        <!-- Premium Card -->
         <div class="card mb-3">
           <div class="card-body">
             <h5 class="card-title">Subscribe to Premium</h5>
@@ -547,6 +550,7 @@
           </div>
         </div>
 
+        <!-- Whats happening card -->
         <div class="card mb-3">
           <div class="card-body p-0">
             <h5 class="card-title" style="padding-top: 1rem; padding-left: 1rem; padding-right: 1rem">
@@ -555,7 +559,7 @@
             <div class="d-flex card-body trending-item mb-0">
               <div class="avatar me-2" style="border-radius: 5px; width: 70px; height: 70px">SC</div>
               <div class="flex-grow-1">
-                <p class="mb-0">Football Game</p>
+                <p class="mb-0">NFL Game</p>
                 <small class="text-muted">This morning</small>
               </div>
             </div>
@@ -582,6 +586,8 @@
           </div>
           <a href="#" class="text-decoration-none trending-item m-0 px-3 py-2" style="color: #1d9bf0">Show more</a>
         </div>
+
+        <!-- Follow Card -->
         <div class="card mb-3">
           <div class="card-body p-0">
             <h5 class="card-title" style="padding-top: 1rem; padding-left: 1rem; padding-right: 1rem">Who to follow</h5>
@@ -614,7 +620,6 @@
       </div>
 
     </main>
-    <footer></footer>
 
     <!-- Page-specific code -->
     <script src="scripts/posts.js"></script>
